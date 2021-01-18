@@ -1,10 +1,16 @@
 import java.io.File;
 import java.util.Scanner;
-
+/**
+ *
+ * @author Ben
+ */
 public class Main {
-	
-	public static void main(String[] args) {
-		// Will need to replace this with GUI that takes drag and drop files
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Will need to replace this with GUI that takes drag and drop files
 		File myEmailFile = new File("Filename.eml");
 		
 		//Personal Parser... Might want to end up using a library for this
@@ -35,6 +41,6 @@ public class Main {
 			//When we make the GUI, this will prompt the user to re-try with a correct file...
 			System.out.println(myParsedObject[0].toString() + " " + myParsedObject[1].toString() + " bummer...");
 		}
-	}
-
+    }
+    
 }
